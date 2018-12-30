@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://data.whicdn.com/images/186155285/large.jpg">
+  <title>Goobers' to-do list</title>
+</head>
+<body>
+  <h1> Goobers list</h1>
+    <p style='text-align:center' >Add an item<button id='add-item'>+</button></p>
+  <div align="center" class="container" style= "display: none">
+    <form class="add-todo-form" >
+        <h3>Create a new item</h3>
+        <input type="text" name="name" value="" placeholder="Enter the task's title" class="input-title">
+        <br>
+        <input type="text" name="dueDate" value="" placeholder="Set a due date" class="input-due-date">
+        <br>
+        <input type="submit" name="submit" value="Create New Item" class="submit">
+    </form>
+  </div>
+  <div id="list-items-container"></div>
+  <h5 id="item-counter">0</h5>
+  
+  <p style='text-align:center' >Show completed items <br><br> <button id='show-completed'>⬇</button></p>
+  <!-- <button style='text-align:center' id='show-completed'>+</button></p> -->
+  <div style= "display: none"  id="completed-items-container"></div>
+  
+  <br>
+
+  
+</body>
+<script type="text/javascript" src="./API.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</html>
